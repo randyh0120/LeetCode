@@ -11,7 +11,7 @@ var containsDuplicate = function(nums) {
     for (const num of nums) {
         if (seen[num]) return true;
         
-        seen[num] = true;
+        seen[num] = (seen[num] || 0) + 1;
     }
     
     return false;
