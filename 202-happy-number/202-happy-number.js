@@ -2,6 +2,9 @@
  * @param {number} n
  * @return {boolean}
  */
+
+// time (n * s) space O(n)
+// Not positive on the n part of the time and space
 var isHappy = function(n) {
     let res = 0;
     let set = new Set();
