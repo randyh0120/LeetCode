@@ -2,6 +2,8 @@
  * @param {string} s
  * @return {string[][]}
  */
+
+// Time O(N * 2^(N-1)) | Space O(2^(N-1))
 var partition = function(s) {
     let res = [];
     
