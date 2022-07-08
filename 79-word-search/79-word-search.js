@@ -18,7 +18,7 @@ var exist = function(board, word) {
             return false;
         }
         
-        let temp = board[row][col];
+        // let temp = board[row][col];
         
         board[row][col] = '#';
         
@@ -29,7 +29,7 @@ var exist = function(board, word) {
             return true;
         }
         
-        board[row][col] = temp;
+        board[row][col] = word[wordLength];
     }
     
     for (let i = 0; i < ROWLEN; i++) {
