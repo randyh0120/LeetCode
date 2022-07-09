@@ -2,6 +2,8 @@
  * @param {string} digits
  * @return {string[]}
  */
+
+// time O(4^n * n) | space O(n)
 var letterCombinations = function(digits) {
     if (!digits.length) return [];
     
