@@ -2,6 +2,8 @@
  * @param {number} n
  * @return {string[][]}
  */
+
+// time O(n!) | space O(n^n)
 var solveNQueens = function(n) {
     let res = [];
     
