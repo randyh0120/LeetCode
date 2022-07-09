@@ -9,6 +9,7 @@ var numIslands = function(grid) {
     
     for (let i = 0; i < grid.length; i++) {
         for (let j = 0; j < grid[0].length; j++) {
+            // only want to traverse if we are at an island
             if (grid[i][j] === '1') {
                 islands += 1;
                 dfs(i, j);
@@ -16,17 +17,17 @@ var numIslands = function(grid) {
         }
     }
     
-    function dfs(row, col) {
-        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] === '0') {
+    function dfs(r, c) {
+        if (r < 0 || r >= grid.length || c < 0 || c >= grid[0].length || grid[r][c] === '0') {
             return;
         }
         
-        grid[row][col] = '0';
+        grid[r][c] = '0';
         
-        dfs(row - 1, col);
-        dfs(row + 1, col);
-        dfs(row, col - 1);
-        dfs(row, col + 1);
+        dfs(r - 1, c);
+        dfs(r + 1, c);
+        dfs(r, c - 1);
+        dfs(r, c + 1);
     }
     
     return islands;
