@@ -2,6 +2,8 @@
  * @param {number[][]} grid
  * @return {number}
  */
+
+// time O(m * n) | space O(m * n)
 var orangesRotting = function(grid) {
     if (!grid.length) return -1;
     
