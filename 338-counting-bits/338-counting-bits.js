@@ -8,9 +8,19 @@ var countBits = function(n) {
     let ans = [0];
     
     for (let i = 1; i < n + 1; i++) {
-        const ones = Number(i).toString(2).replace(/0/g, '').length;
-        ans.push(ones);
+        ans.push(counting(i));
     }
     
     return ans;
+    
+    function counting(num) {
+        count = 0;
+        
+        while (num > 0) {
+            count += num & 1;
+            num >>= 1;
+        }
+        
+        return count;
+    }
 };
