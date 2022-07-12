@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 
-// time O(n) | space O(1)
+// time O(n log n) | space O(n)
 var countBits = function(n) {
     let ans = [0];
     
