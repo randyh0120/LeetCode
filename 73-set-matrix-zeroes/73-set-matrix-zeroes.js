@@ -2,6 +2,8 @@
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
+
+// time O(m * n) | space O(1)
 var setZeroes = function(matrix) {
     let isCol = false;
     let r = matrix.length;
