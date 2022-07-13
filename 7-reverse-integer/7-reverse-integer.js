@@ -3,7 +3,8 @@
  * @return {number}
  */
 
-// time O(n) | space O(n)
+// time O(1) | space O(1)
+// Time and Space are constant since we have an upper limit of 32-bit integer range
 var reverse = function(x) {
     if (!x) return x;
     
