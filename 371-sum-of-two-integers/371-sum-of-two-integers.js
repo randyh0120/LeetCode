@@ -3,6 +3,8 @@
  * @param {number} b
  * @return {number}
  */
+
+// time O(n) | space O(1)
 var getSum = function(a, b) {
     while (b) {
         let temp = (a & b) << 1
