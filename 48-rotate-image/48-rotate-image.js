@@ -2,6 +2,8 @@
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
+
+// time O(m * n) | space O(1)
 var rotate = function(matrix) {
     // Flip Vertically
     for (let i = 0; i < Math.floor(matrix.length / 2); i++) {
