@@ -9,6 +9,8 @@ class DetectSquares {
      * @param {number[]} point
      * @return {void}
      */
+    
+    // time O(1) | space O(1)
     add(point) {
         const [x, y] = point;
         const str = x + ',' + y
@@ -21,6 +23,8 @@ class DetectSquares {
      * @param {number[]} point
      * @return {number}
      */
+    
+    // time O(p) | space (1)
     count(point) {
         let res = 0;
         const [x1, y1] = point;
