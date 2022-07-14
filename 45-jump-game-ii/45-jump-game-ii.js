@@ -11,6 +11,7 @@ var jump = function(nums) {
     let target = nums.length - 1
     
     for (let i = 0; i < nums.length; i++) {
+        // we do this at the beginning in case of input being [0]
         if (next >= target) break;
         
         if (i > curr) res++, curr = next;
