@@ -3,6 +3,8 @@
  * @param {number[]} cost
  * @return {number}
  */
+
+// time O(n) | space O(1)
 var canCompleteCircuit = function(gas, cost) {
     let total = 0
     let start = 0;
