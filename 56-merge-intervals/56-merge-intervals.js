@@ -3,7 +3,7 @@
  * @return {number[][]}
  */
 
-// time O(n) | space O(n)
+// time O(n log n) | space O(n)
 var merge = function(intervals) {
     intervals.sort((a, b) => a[0] - b[0]);
     let res = [intervals[0]];
